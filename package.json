@@ -15,5 +15,11 @@
     "type": "git",
     "url": "git://github.com/PhilipMantrov/json-case-convertor-ts"
   },
-  "homepage": "https://github.com/PhilipMantrov/json-case-convertor-ts"
+  "homepage": "https://github.com/PhilipMantrov/json-case-convertor-ts",
+  "keywords": [
+    "json",
+    "case",
+    "converter",
+    "typescript"
+  ]
 }
