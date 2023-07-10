@@ -68,7 +68,7 @@ snakeCaseValues(jsonData) //Convert all the values of object to snake case
 
 Output:
 
-```sh
+```typescript
 {
   firstName: 'john',
   lastName: 'wick',
