@@ -1,9 +1,9 @@
 # JsonCaseConvertorTS
 ## Convert any json object key name and values case
 
+It's TS fork of original lib `JsonCaseConvertor` [https://github.com/MIRTAHAALI/json-case-convertor]
 
-
-JsonCaseConvertor can handle literraly any json object for case convertion. 
+JsonCaseConvertorTS can handle literraly any json object for case convertion. 
 ## Features
 
 - Supported cases: Pascal, Camel, Snake, Kebab, Upper, Lower, Constant, Dot, Path, Sentence, Title
