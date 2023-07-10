@@ -1,19 +1,19 @@
 {
-  "name": "json-case-convertor",
-  "version": "1.4.0",
-  "description": "JsonCaseConvertor can handle literraly any json object for case convertion. \r ## Features",
+  "name": "json-case-convertor-ts",
+  "version": "1.0.0",
+  "description": "JsonCaseConvertorTS can handle literraly any json object for case convertion. \r ## Features",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "MIRTAHAALI",
+  "author": "PhilipMantrov",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/MIRTAHAALI/json-case-convertor.git"
+    "url": "git://github.com/PhilipMantrov/json-case-convertor-ts"
   },
-  "homepage": "https://github.com/MIRTAHAALI/json-case-convertor.git"
+  "homepage": "https://github.com/PhilipMantrov/json-case-convertor-ts"
 }
