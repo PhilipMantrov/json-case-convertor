@@ -1,4 +1,4 @@
-# JsonCaseConvertor
+# JsonCaseConvertorTS
 ## Convert any json object key name and values case
 
 
@@ -16,7 +16,7 @@ JsonCaseConvertor can handle literraly any json object for case convertion.
 ## Installation
 
 ```npm
-npm install json-case-convertor
+npm install json-case-convertor-ts
 ```
 
 ## Usage
@@ -24,12 +24,12 @@ npm install json-case-convertor
 Import:
 
 ```javascript
-const jcc = require('json-case-convertor')
+import { snakeCaseKeys, snakeCaseValues } from 'json-case-converter-ts';
 ```
 
 Convert only object KEYS Names:
 
-```javascript
+```typescript
 const jsonData = { 
 	"firstName": "John", 
 	"lastName": "Wick", 
@@ -43,12 +43,12 @@ const jsonData = {
 		"latitude1" : 23.11
 	}
 }
-jcc.snakeCaseKeys(jsonData); //Convert all the keys of object to snake case
+snakeCaseKeys(jsonData); //Convert all the keys of object to snake case
 ```
 
 Output:
 
-```sh
+```typescript
 {
   first_name: 'John',
   last_name: 'Wick',
@@ -62,8 +62,8 @@ Output:
 
 Convert only object values:
 
-```javascript
-jcc.snakeCaseValues(jsonData) //Convert all the values of object to snake case
+```typescript
+snakeCaseValues(jsonData) //Convert all the values of object to snake case
 ```
 
 Output:
@@ -82,12 +82,12 @@ Output:
 
 Convert only object keys and values:
 
-```javascript
-jcc.snakeCaseAll(jsonData) //Convert all the values and keys of object to snake case
+```typescript
+snakeCaseAll(jsonData) //Convert all the values and keys of object to snake case
 ```
 Output:
 
-```sh
+```typescript
 {
   first_name: 'john',
   last_name: 'wick',
@@ -99,89 +99,6 @@ Output:
 }
 ```
 
-### Functions
-
-```javascript
-const jcc = require('json-case-convertor')
-
-jcc.pascalCaseKeys(jsonData)
-
-jcc.camelCaseKeys(jsonData)
-
-jcc.snakeCaseKeys(jsonData)
-
-jcc.kebabCaseKeys(jsonData)
-
-jcc.upperCaseKeys(jsonData)
-
-jcc.lowerCaseKeys(jsonData)
-
-jcc.constantCaseKeys(jsonData)
-
-jcc.dotCaseKeys(jsonData)
-
-jcc.pathCaseKeys(jsonData)
-
-jcc.sentenceCaseKeys(jsonData)
-
-jcc.titleCaseKeys(jsonData)
-
-//-------------------------
-
-jcc.pascalCaseAll(jsonData)
-
-jcc.camelCaseAll(jsonData)
-
-jcc.snakeCaseAll(jsonData)
-
-jcc.kebabCaseAll(jsonData)
-
-jcc.upperCaseAll(jsonData)
-
-jcc.lowerCaseAll(jsonData)
-
-jcc.constantCaseAll(jsonData)
-
-jcc.dotCaseAll(jsonData)
-
-jcc.pathCaseAll(jsonData)
-
-jcc.sentenceCaseAll(jsonData)
-
-jcc.titleCaseAll(jsonData)
-
-//----------------------------
-jcc.pascalCaseValues(jsonData)
-
-jcc.camelCaseValues(jsonData)
-
-jcc.snakeCaseValues(jsonData)
-
-jcc.kebabCaseValues(jsonData)
-
-jcc.upperCaseValues(jsonData)
-
-jcc.lowerCaseValues(jsonData)
-
-jcc.constantCaseValues(jsonData)
-
-jcc.dotCaseValues(jsonData)
-
-jcc.pathCaseValues(jsonData)
-
-jcc.sentenceCaseValues(jsonData)
-
-jcc.titleCaseValues(jsonData)
-
-```
-
-##### [Link to repo github](https://github.com/MIRTAHAALI/json-case-convertor)
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 
