@@ -8,37 +8,37 @@ var caseCondition = function (origKey, keyCase) {
     var newKey = null;
     switch (keyCase) {
         case "pascal":
-            newKey = lodash_1["default"].startCase(lodash_1["default"].camelCase(origKey)).replace(/ /g, "");
+            newKey = lodash_1.startCase(lodash_1.camelCase(origKey)).replace(/ /g, "");
             break;
         case "camel":
-            newKey = lodash_1["default"].camelCase(origKey);
+            newKey = lodash_1.camelCase(origKey);
             break;
         case "kebab":
-            newKey = lodash_1["default"].kebabCase(origKey);
+            newKey = lodash_1.kebabCase(origKey);
             break;
         case "snake":
-            newKey = lodash_1["default"].snakeCase(origKey);
+            newKey = lodash_1.snakeCase(origKey);
             break;
         case "upper":
-            newKey = lodash_1["default"].toUpper(origKey);
+            newKey = lodash_1.toUpper(origKey);
             break;
         case "constant":
-            newKey = lodash_1["default"].upperCase(origKey).replace(/ /g, "_");
+            newKey = lodash_1.upperCase(origKey).replace(/ /g, "_");
             break;
         case "dot":
-            newKey = lodash_1["default"].lowerCase(origKey).replace(/ /g, ".");
+            newKey = lodash_1.lowerCase(origKey).replace(/ /g, ".");
             break;
         case "path":
-            newKey = lodash_1["default"].lowerCase(origKey).replace(/ /g, "/");
+            newKey = lodash_1.lowerCase(origKey).replace(/ /g, "/");
             break;
         case "lower":
-            newKey = lodash_1["default"].toLower(origKey);
+            newKey = lodash_1.toLower(origKey);
             break;
         case "sentence":
-            newKey = lodash_1["default"].upperFirst(lodash_1["default"].lowerCase(origKey));
+            newKey = lodash_1.upperFirst(lodash_1.lowerCase(origKey));
             break;
         case "title":
-            newKey = lodash_1["default"].startCase(lodash_1["default"].camelCase(origKey));
+            newKey = lodash_1.startCase(lodash_1.camelCase(origKey));
             break;
     }
     return newKey;
